@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
+#include <conio.h>
 #include <windows.h>
 #define BOARDSIZE 100
 #define MAX 100
@@ -120,7 +121,7 @@ int postGameMenu() {
     printf("\033[1;33m3. Exit\033[0m\n");
     printf("\033[1;32mEnter choice: \033[0m");
     scanf("%d", &choice);
-Sleep(1);
+Sleep(1000);
 system("cls");
     if (choice == 3) {
         printf("Exiting...\n");
@@ -974,7 +975,7 @@ printf("\033[2J\033[H");
 system("cls");
 
     while (1) {
-            sleep(1);
+            Sleep(1000);
 system("cls");
     char username[30];
 
@@ -991,7 +992,7 @@ system("cls");
     printf("\t\t\t\t\033[1;34m==================================================\033[0m\n");
     printf("\t\t\t\t\033[1;34m>> Enter Your Choice:\033[0m ");
     scanf("%d", &n);
-sleep(1);
+Sleep(1000);
 system("cls");
         switch (n) {
             case 1:
